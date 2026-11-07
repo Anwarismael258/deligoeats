@@ -1,1 +1,0 @@
-Build web publicada a partir do DeliGo App Flutter.
