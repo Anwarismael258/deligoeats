@@ -1,0 +1,9 @@
+{
+  "name": "DeliGo Eats",
+  "short_name": "DeliGo Eats",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff6f6",
+  "theme_color": "#ed1c24",
+  "icons": [{"src":"/favicon.png","sizes":"any","type":"image/png","purpose":"any maskable"}]
+}

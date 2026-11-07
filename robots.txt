@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ww.deligoeats.com/sitemap.xml
