@@ -2,8 +2,7 @@
   "version": 2,
   "cleanUrls": true,
   "rewrites": [
-    {"source": "/app", "destination": "https://deligoeats-7nnj4xg5h-central-deligotriunfal.vercel.app"},
-    {"source": "/app/(.*)", "destination": "https://deligoeats-7nnj4xg5h-central-deligotriunfal.vercel.app/$1"},
+    {"source": "/app", "destination": "/app/index.html"},
     {"source": "/(.*)", "destination": "/index.html"}
   ]
 }
