@@ -91986,7 +91986,7 @@ s=8
 return A.d(A.cd().gbm().gah().a9q(l,d),$async$RM)
 case 8:k=b
 if(k.b==null)throw A.z(B.akN)
-if(m.gI())A.dN(m.gA(),"/client-dashboard")
+if(m.gI())A.dN(m.gA(),"/")
 s=9
 return A.d($.aaF().Wg("login_password_success",A.T(["phone",f],t.N,t.z)),$async$RM)
 case 9:n.push(6)
