@@ -43,7 +43,7 @@
     if (route === 'privacidade') return pageView.innerHTML = shell('Política de privacidade', 'Como tratamos os dados necessários para operar o DeliGo Eats.', '<div class="legal-copy"><p>Utilizamos os dados de conta, contacto, pedido e pagamento apenas para autenticação, processamento, suporte, segurança e melhoria do serviço.</p><p>Não coloque dados completos de cartões ou códigos secretos no formulário de contacto. Para dúvidas sobre privacidade, escreva para <a href="mailto:geral@deligotriunfal.site">geral@deligotriunfal.site</a>.</p></div>');
   }
 
-  function navigate() { renderPage((location.hash || '#home').slice(1).split('?')[0] || 'home'); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  function navigate() { var path = location.pathname.replace(/^\/+|\/+$/g, ''); var route = path || (location.hash || '#home').slice(1).split('?')[0] || 'home'; renderPage(route); window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
   window.addEventListener('DOMContentLoaded', function () {
     var style = document.createElement('style');
@@ -55,8 +55,8 @@
     pageView.style.display = 'none';
     main.parentNode.insertBefore(pageView, main);
     var nav = document.querySelector('nav');
-    if (nav) nav.innerHTML = '<a href="#home">Início</a><a href="#restaurantes">Restaurantes</a><a href="#parceiros">Parceiros</a><a href="#entregadores">Entregadores</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a>';
-    document.querySelector('.legal')?.insertAdjacentHTML('afterbegin', '<a href="#termos">Termos</a><a href="#privacidade">Privacidade</a>');
+    if (nav) nav.innerHTML = '<a href="/">Início</a><a href="/restaurantes">Restaurantes</a><a href="/parceiros">Parceiros</a><a href="/entregadores">Entregadores</a><a href="/faq">FAQ</a><a href="/contacto">Contacto</a>';
+    document.querySelector('.legal')?.insertAdjacentHTML('afterbegin', '<a href="/termos">Termos</a><a href="/privacidade">Privacidade</a>');
     window.addEventListener('hashchange', navigate);
     navigate();
   });
